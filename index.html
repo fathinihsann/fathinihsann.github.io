@@ -112,22 +112,94 @@
                   <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up">
                       <div class="icon"><i class="bx bx-money"></i></div>
-                      <h4 class="title"><a href="./pages/donasi-page.html">Infaq Sodakoh</a></h4>
+                      <h4 class="title"><a type="button" data-bs-toggle="modal" data-bs-target="#infaqModal">Infaq Sodakoh</a></h4>
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up">
                       <div class="icon"><i class="bx bx-chat"></i></div>
-                      <h4 class="title"><a href="./pages/konsultasi-page.html">Konsultasi</a></h4>
+                      <h4 class="title"><a type="button" data-bs-toggle="modal" data-bs-target="#konsultasiModal">Konsultasi</a></h4>
                     </div>
                   </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
+
+    <!-- Modal -->
+
+    <!-- Konsultasi Modal -->
+    <div class="modal fade" id="konsultasiModal" tabindex="-1" aria-labelledby="konsultasiModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Konsultasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nama:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Identitas anda dirahasiakan dari pihak lain</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlSelect1">Judul Topik:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Isi Topik:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="50"></textarea>
+              </div>
+              <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Data Benar</label>
+              </div> -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infaq Modal -->
+    <div class="modal fade" id="infaqModal" tabindex="-1" aria-labelledby="infaqModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Infaq</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+              <div class="modal-body">
+                <h5>Qr Code</h5>
+                <br>
+                <h5>Rekening</h5>
+                <br>
+                <p>No. Rek: 760 690 478 500</p>
+                <p>CIMB NIAGA SYARIAH</p>
+                <p>a/n Ditasiani Oktovie</p>
+                <hr>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Upload Bukti Transaksi:</label>
+                  <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts  section-bg">
