@@ -94,7 +94,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(55, 142, 181, 0.9);
+  background: rgba(4, 24, 33, 0.9);
   padding: 12px;
 }
 
@@ -524,7 +524,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(../img/section-title-bg.png) no-repeat;
+  /* background: url(../img/section-title-bg.png) no-repeat; */
   z-index: -1;
 }
 
@@ -708,7 +708,6 @@ section {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1124,6 +1123,10 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team{
+  background: linear-gradient(rgba(0, 4, 5, 0.8), rgba(0, 4, 5, 0.8)), url("../img/main1.png") fixed center center;
+}
+
 .team .member {
   text-align: center;
   margin-bottom: 80px;
