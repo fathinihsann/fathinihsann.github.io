@@ -100,7 +100,7 @@
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up">
                       <div class="icon"><i class="bx bx-user-plus"></i></div>
-                      <h4 class="title"><a href="./pages/pendaftaran-page.html">Pendaftaran</a></h4>
+                      <h4 class="title"><a type="button" data-bs-toggle="modal" data-bs-target="#pendaftaranModal">Pendaftaran</a></h4>
                     </div>
                   </div>
                   <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
@@ -178,8 +178,8 @@
             </div>
             <form>
               <div class="modal-body">
-                <h5>Qr Code</h5>
-                <br>
+                <!-- <h5>Qr Code</h5>
+                <br> -->
                 <h5>Rekening</h5>
                 <br>
                 <p>No. Rek: 760 690 478 500</p>
@@ -189,8 +189,59 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Upload Bukti Transaksi:</label>
                   <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="emailHelp" class="form-text">Identitas anda dirahasiakan dari pihak lain</div>
                 </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+       <!-- Pendaftaran Modal -->
+    <div class="modal fade" id="pendaftaranModal" tabindex="-1" aria-labelledby="pendaftaranModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Infaq</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nama Calon Siswa</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Umur</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Pendidikan</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <label>Select Option:</label>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    Laki - Laki
+                    </label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    Perempuan
+                    </label>
+                </div>
+                <br>
+                <br>
+                <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Saya bersedia mengikuti semua peraturan dan ketentuan Al Quds</label>
+              </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -252,7 +303,7 @@
           <h2>Kegiatan di lingkungan RUMAH TAHFIDZ AL-QUDS</h2>
           <h3>Kegiatan utama:</h3>
           <br>
-            <h4>Tahfidz keompok usia SD hingga SMA</h4>
+            <h4>Tahfidz kelompok usia SD hingga SMA</h4>
             <h4>SENIN-JUM'AT PUKUL: 15-20 WIB</h4>
             <br>
             <h4>Pengajian orang tua</h4>
@@ -525,7 +576,7 @@
             <h4>Dwi Hermawan Prasetyo</h4>
             <h4>Sufita Diah Suryandari</h4>
             <h4>Ditasiani Oktovie </h4>
-            <h4>Norman Sasono Adi</h4>
+            <h4>Norman Saksono Adi</h4>
             <br>
             <h3 style="font-weight: bold;">Koordinator Tim Pengajar</h3>
             <br>
@@ -681,18 +732,18 @@
             <div class="footer-info">
               <h3>Rumah Tahfidz Al Quds</h3>
               <p>
-                Jalan Musa Ujung<br>
+                Jalan Musa Ujung 32A<br>
                 Sukabumi Utara, Kecamatan Kebon Jeruk, Jakarta Barat<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Dita:</strong> +62 856-88-00-180<br>
+                <strong>Umi Ita</strong> +62 812-9789-106<br>
               </p>
-              <div class="social-links mt-3">
+              <!-- <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
